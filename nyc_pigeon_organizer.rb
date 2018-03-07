@@ -17,16 +17,19 @@ def nyc_pigeon_organizer(data)
   data.each do |description, hash|
     hash.each do |attribute, namearr|
       namearr.each do |name|
-
-        if attribute.is_a?(Symbol) && !(ans[name][description].include?(attribute.id2name))
-
-        if attribute.is_a?(Symbol) && !(ans[name][description].include?(attribute))
-          ans[name][description] << attribute.id2name
-        elsif attribute.is_a?(String) && !(ans[name][description].include?(attribute))
-          ans[name][description] << attribute
-        end
+        puts "#{name} and #{attribute} and #{description}"
       end
     end
   end
-  return ans
 end
+
+#         if attribute.is_a?(Symbol) && !(ans[name][description].include?(attribute))
+#           ans[name][description] << attribute.id2name
+#         elsif attribute.is_a?(String) && !(ans[name][description].include?(attribute))
+#           ans[name][description] << attribute
+#         end
+#       end
+#     end
+#   end
+#   return ans
+# end

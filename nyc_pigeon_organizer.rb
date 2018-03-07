@@ -22,6 +22,7 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
+  return asn
 end
 
 #         if attribute.is_a?(Symbol) && !(ans[name][description].include?(attribute))

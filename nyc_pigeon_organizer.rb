@@ -18,6 +18,7 @@ def nyc_pigeon_organizer(data)
     hash.each do |attribute, namearr|
       namearr.each do |name|
         puts "#{name} and #{attribute} and #{description}"
+        puts "test"
       end
     end
   end
